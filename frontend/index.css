@@ -1,0 +1,11 @@
+/* CSS Document */
+
+
+.navbar { 
+	background-color: hotpink;
+}
+
+.mainlogo {
+	position: relative;
+	left: 10px;
+}
