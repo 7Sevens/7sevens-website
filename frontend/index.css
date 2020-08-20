@@ -1,11 +1,26 @@
 /* CSS Document */
 
-
 .navbar { 
-	background-color: hotpink;
+	position: relative;
+	background-color: #1B1B1B;
+	padding: 10px;
+	border-bottom: 10px solid #ff0069;
+	overflow: hidden;
 }
 
-.mainlogo {
+.navbar::before {
+	content: "";
+	background-image: url("images/walkin.png");
+	background-size: 333.5px 133.5px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.2;
+}
+
+.logo {
 	position: relative;
-	left: 10px;
+	left: 25px
 }
