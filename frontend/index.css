@@ -4,7 +4,7 @@ body { margin: 0; padding: 0 }
 
 .navbar { 
 	position: relative;
-	background-color: #1B1B1B;
+	background-color: #222;
 	padding: 10px;
 	border-bottom: 10px solid #ff0069;
 	overflow: hidden;
@@ -13,13 +13,13 @@ body { margin: 0; padding: 0 }
 .navbar::before {
 	content: "";
 	background-image: url("images/walkin.png");
-	background-size: 333.5px 133.5px;
+	background-size: 200px 80px;
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.2;
+    opacity: 0.05;
 }
 
 .logo {
