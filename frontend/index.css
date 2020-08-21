@@ -2,6 +2,20 @@
 
 body { margin: 0; padding: 0 }
 
+a{
+
+	text-decoration: none;
+	color: #00c3ff;
+
+}
+
+a:hover{
+
+	color: #94e6ff;
+	transition:0.1s;
+
+}
+
 .navbar { 
 	position: relative;
 	background-color: #222;
@@ -25,4 +39,52 @@ body { margin: 0; padding: 0 }
 .logo {
 	position: relative;
 	left: 25px
+}
+
+.newsdiv h1 {
+
+	color: #fff;
+	font-weight: 900;
+	text-decoration: underline;
+	/*text-decoration-color: #ff0069;*/
+	text-align: center;
+
+}
+
+.newsdiv h2::before {
+
+	content:" • ";
+
+}
+
+.newsdiv p {
+
+	color: #eee;
+
+}
+
+.newsdiv {
+
+	/*background-color: #1d1d1d;*/
+	background: rgb(29,29,29);
+	background: linear-gradient(0deg, rgba(29,29,29,1) 0%, rgba(34,34,34,1) 100%);
+
+	color: #eee;
+	font-family: 'Work Sans', sans-serif;
+	
+	border-radius: 16px;
+
+	padding: 20px;
+
+	padding-left: 40px;
+	padding-right: 40px;
+
+	margin: 30px;
+	margin-left: 10%;
+	margin-right: 10%;
+
+	border-bottom: 8px none #ff0069;
+	box-shadow: 0 0 16px #0006;
+	/*border-right: 6px solid #000;*/
+
 }
