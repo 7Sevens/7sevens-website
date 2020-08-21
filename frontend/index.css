@@ -78,6 +78,29 @@ a:hover{
 
 }
 
+.login {
+
+	margin-left: auto;
+	margin-right: 12px ;
+
+}
+
+/* TODO: Make this work without using !important. Not sure why it gets overridden by the button, but whatever. */
+.loginbutton {
+	
+	background-color: #ff006955 !important;
+	border-color: #ff0069 !important;
+
+}
+
+.loginbutton:hover {
+
+	background-color: #fff5 !important;
+	border-color: #ffff !important;
+	
+}
+
+
 .navbar::before {
 	content: "";
 	background-image: url("images/walkin.png");
