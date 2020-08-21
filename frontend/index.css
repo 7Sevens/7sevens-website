@@ -2,6 +2,15 @@
 
 body { margin: 0; padding: 0 }
 
+/*mystery cheese, do not touch!*/
+.preload * {
+	transition: none !important;
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-ms-transition: none !important;
+	-o-transition: none !important;
+}
+
 a{
 
 	text-decoration: none;
@@ -17,11 +26,56 @@ a:hover{
 }
 
 .navbar { 
+
 	position: relative;
+	display: flex;
+	align-items: center;
+
+	flex-grow: unset;
 	background-color: #222;
 	padding: 10px;
 	border-bottom: 10px solid #ff0069;
 	overflow: hidden;
+}
+
+.navbar button { 
+
+
+	font-weight: 200;
+	font-size: 1.25em;
+	color: white;
+	font-weight: 200;
+	font-family: 'Oswald', sans-serif;
+
+	border-style: solid;
+	border-color: #0000;
+	background-color: #0000;
+
+	border-radius: 2px;
+
+	position: relative;
+	left:10px;
+	
+	top:0%;
+	bottom:100%;
+
+	padding: 15px 20px;
+	margin: 0px 4px;
+	transition:0.05s;
+	border-width: 2px;
+	box-shadow: 0 0 16px #0007;
+
+}
+
+.navbar button:hover { 
+
+
+	background-color: #fff2;
+	border-color: #ffff;
+
+	transition:0.2s;
+
+
 }
 
 .navbar::before {
@@ -37,8 +91,7 @@ a:hover{
 }
 
 .logo {
-	position: relative;
-	left: 25px
+	margin: 0px 25px;
 }
 
 .newsdiv h1 {
@@ -47,6 +100,7 @@ a:hover{
 	font-weight: 900;
 	text-decoration: underline;
 	/*text-decoration-color: #ff0069;*/
+	font-family: 'Work Sans', sans-serif;
 	text-align: center;
 
 }

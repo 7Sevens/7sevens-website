@@ -1,17 +1,21 @@
 <!doctype html>
 <html>
 	<head>
-		<link rel="stylesheet" href="index.css">
 		<meta charset="utf-8">
+		<link rel="stylesheet" href="index.css">
 		<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 		<title>7Sevens</title>
 		<link rel="icon" href="images/favicon.png">
 	</head>
-	<body style="background-color: #111">
+	<body style="background-color: #111" class="preload">
 	
 		<div class="navbar">
 			<img class="logo" src="images/7Sevens.svg" width="75" height="75">
-			<div class="navbaraccent"></div>
+			<button>Home</button>
+			<button>Forums</button>
+			<button>Leaderboards</button>
+			<button>Admin Panel</button>
 		</div>
 	
 		<div class="newsdiv">
@@ -37,7 +41,12 @@
 			</ul>
 
 		</div>
-		
+
+		<script>
+			// this is no good
+			document.getElementsByClassName("preload")[0].removeAttribute("class");
+
+		</script>
 
 	</body>
 </html>
