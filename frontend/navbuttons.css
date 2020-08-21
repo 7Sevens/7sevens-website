@@ -9,6 +9,7 @@
 	color: white;
 	font-weight: 200;
 	font-family: 'Oswald', sans-serif;
+	text-shadow: 2px 1px #000F;
 
 	border-style: solid;
 	border-color: #0000;
@@ -36,6 +37,8 @@
 
 	background-color: #fff2;
 	border-color: #ffff;
+
+	text-shadow: 1px 1px #ff0069;
 
 	transition:0.2s;
 
