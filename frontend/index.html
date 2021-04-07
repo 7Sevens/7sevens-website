@@ -1,108 +1,93 @@
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="index.css">
-		<link rel="stylesheet" href="buttons.css">
-		<link rel="stylesheet" href="newsdiv.css">
-		<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-		<title>7Sevens</title>
-		<link rel="icon" href="images/favicon.png">
-		<base href="https://7sevens.com/">
-	</head>
-	<body style="background-color: #111" class="preload">
-	
-		<div class="navbar">
-			<a href="" style="z-index: 100;">
-                <img class="logo" src="images/7Sevens.svg" width="75" height="75">
-            </a>
-
-			<div>
-				<button onclick="location.href='games.html'">Games</button>
-				<button>Forums</button>
-				<button>Bug Tracker</button>
-				<button>Our Team</button>
-			</div>
-
-			<div class="login">
-				<button class="loginbutton">Account</button>
-			</div>
-
-		</div>
-	
-		<div class="container">
-
-			<div class="newsdiv">
-			
-				<h1>Test Blah News ASDASD</h1>
-
-				<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
-				
-				<h2>Header Level 2</h2>
-				
-				<ol>
-				<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-				<li>Aliquam tincidunt mauris eu risus.</li>
-				</ol>
-				
-				<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
-				
-				<h3>Header Level 3</h3>
-				
-				<ul>
-				<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-				<li>Aliquam tincidunt mauris eu risus.</li>
-				</ul>
-
-			</div>
-
-			<div class="footer">
-
-				<!-- TODO: fix footer so you dont have to manually scale it -->
-				<!-- Footers are evil. It's true! -->
-
-				<div>
-
-					<h1>Test Column 1</h1>
-
-					<p>Blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-					<p>Blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-					<p>Blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-					<p>Blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-
-				</div>
-				<div>
-
-					<h1>Test Column 2</h1>
-
-					<p>Blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-					<p>Blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-					<p>Blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-					<p>Blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-
-				</div>
-				<div>
-
-					<h1>Test Column 3</h1>
-
-					<p>Blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-					<p>Blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-					<p>Blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-					<p>Blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-
-				</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="button.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="var.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="icon" href="resources\assets\logo\favicon.png">
+    <script src="3rdparty\Anime-js\lib\anime.js"></script>
+    <title>7Sevens</title>
+</head>
+<body style="background-color: #323232; margin: 0;">
+  
+    <div class="page-container">
 
 
-			</div>
+        <div class="content-wrap">
 
-		</div>
+            <div class="pagesizer" style="height: 80vh;">
+                <div class="wrapper">
 
-		<script>
-			// this is no good
-			document.getElementsByClassName("preload")[0].removeAttribute("class");
 
-		</script>
+                    <div>
+                        <svg id="7Sevens" data-name="7Sevens" style="width: 256px; height: 256px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 466.59 468.25"><defs><style>.cls-1{fill:#fff;}</style></defs><path class="cls-1" d="M61.82,191.92l221.62-17.68L130,380.21,36.74,288.27ZM390.22,141l39.6,39L378.46,377.22l-197.11,53.6ZM343.89,95.27,78.81,126.68,88.1,91,284.65,36.87ZM294.25,0,61,64.27,0,298.39,172.31,468.25,405.59,404l61-234.12Z"/></svg>
+                    </div>
+                        <Br>
+                        <div style="align-content: center; display: block;">
+                        <a id="btn" href="about.html" class="btn std regular">About us</a>
+                        <a id="btn" href="games.html" class="btn std large">Our Games</a>
+                        <a id="btn" href="mailto:Beepo@7sevens.com" class="btn std regular">Contact us</a>
+                        </div>
 
-	</body>
+                </div>
+            </div>  
+            
+            <div class="footer">
+
+                <div class="footer-wrap">
+
+                    <div class="row" >
+                        <div class="column">
+                            <h2>Social</h2>
+                            <ul>
+                              <li><a href="https://twitter.com/7SevensOfficial" class="nodeco"><b>Twitter</b></a></li>
+                              <li><a href="https://www.twitch.tv/7sevensofficial" class="nodeco"><b>Twitch</b></a></li>
+                              <li><a href="https://discord.gg/9f8tmpbhDM" class="nodeco"><b>Discord</b></a></li>   
+                              <li><a href="https://www.youtube.com/channel/UCZ3QV2aoeCCWg1VYtV8h1ug" class="nodeco"><b>Youtube</b></a></li>
+                            </ul>
+                            
+                        </div>
+                        <div class="column">
+                            <h2>Contact</h2>
+                            <ul>
+                              <li><a href="mailto:Beepo@7sevens.com" class="nodeco"><b>Email</b></a></li>
+                            </ul>
+    
+                        </div>
+                        <div class="column">
+                            <h2>Other</h2>
+                            <ul>
+                              <li><a href="Games.html" class="nodeco"><b>Games</b></a></li>
+                              <li><a href="https://store.steampowered.com/developer/7Sevens" class="nodeco"><b>Steam</b></a></li>   
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <h2>Legal</h2>
+                            <ul>
+                            </ul>
+                        </div>                                            
+                    </div>
+                        <div class="ccom"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="padding: 5px 5px; align-self: center;"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a></div>
+                    </div>
+                    
+
+                </div>
+            
+            </div>            
+
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
 </html>

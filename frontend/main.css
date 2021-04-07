@@ -1,0 +1,123 @@
+/*
+
+    Page Tools
+
+*/
+
+.wrapper
+{
+    margin: 15% 0;
+    display: block;
+    text-align: center; 
+    align-self: center;
+    padding: 25px;
+    overflow: hidden;
+    background-color: #fff2;
+}
+
+.pagesizer
+{
+
+    display: block;
+    text-align: center; 
+    align-self: center;
+
+}
+
+/*
+
+    Misc
+
+*/
+
+.clickable{cursor: pointer;}
+
+
+/*
+
+    Page stuff
+
+*/
+
+.footer-wrap
+{
+
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+.column
+{
+    float: left;
+    width: 20%;
+    padding: 10px;
+    height: 100%;
+}
+.row:after 
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+.ccom:after{    box-sizing: inherit;}
+.ccom
+{
+    display: flex; 
+    align-self: center; 
+    align-content: center;
+    padding-left: 45%;
+}
+.row{width: 90%;}
+.page-container
+{
+
+    position: relative;
+    min-height: 100vh;
+
+}
+
+li
+{    
+    margin-bottom: 5px;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.header
+{
+    
+	display: flex;	
+    justify-content: center;
+	background: rgb(64,64,64);
+    background: linear-gradient(0deg, rgba(64,64,64,1) 0%, rgba(69,69,69,1) 75%, rgba(80,80,80,1) 100%);
+	padding: 10px 10px;
+	border-bottom: 5px solid var(--accent);
+    overflow: hidden;
+    box-shadow: 0px 0px 15px #0004;
+
+}
+
+.footer
+{
+    box-sizing: border-box;
+    display: flex;	
+    justify-content: center;
+	background: rgb(64,64,64);
+    background: linear-gradient(0deg, rgba(64,64,64,1) 0%, rgba(69,69,69,1) 75%, rgba(80,80,80,1) 100%);
+	border-top: 5px solid var(--accent);
+    overflow: hidden;
+    box-shadow: 0px 0px 15px #0004;
+    padding: 10px 10px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+}

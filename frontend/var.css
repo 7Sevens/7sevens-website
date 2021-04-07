@@ -1,0 +1,12 @@
+:root 
+{
+    --accent: #ff0070;
+    --accent-dark: #bd0042;
+    --accent-hyper: #ff0055;
+    --accent-hyper-hover: #ff0095;
+    --accent-trans: #ff007033;
+    --danger: #ff4848;
+    --confirm: #9aff26;
+    --grayed: #999999;
+    --warn: #ffd82a;
+}
